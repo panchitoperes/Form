@@ -1,11 +1,57 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
 <body>
-    
+    <h1>Pizzeria DEV.F</h1>
+    <img src="https://media.istockphoto.com/id/638790274/es/foto/pizza-de-margerita-sabrosa-al-horno.jpg?s=612x612&w=0&k=20&c=nXd46AyeCxglSYqvwXoNxjCYYsJnYz74K50l6XuON3E=" alt="Pizzeria" width="500px" >
+    <form>
+    <br>
+    <label>Nombre(s)</label>
+        <input
+        type="text"
+        name="nombre"
+        placeholder="Ingresa tu nombre"
+        required
+    />
+    <br>
+        <label>Apellidos</label>
+        <input
+        type="text"
+        name="apellidos"
+        placeholder="Ingresa tus apellidos"
+        required   
+    />
+    <br>
+    <label>Email</label>
+        <input
+        type="text"
+        name="mail"
+        placeholder="Ingresa tu Email"
+        required    
+    />
+    <br>
+        <label>Hora de entrega</label>
+        <input
+            type="time"
+            name="hora_entrega"
+            required
+>
+    <br><br>
+        <label> Seleccione su pizza</label>
+        <select name="select_pizza">
+            <option value="" selected hidden disabled >Selecciona la opción</option>
+            <option value="gato">Napolitana</option>
+            <option value="perro">Peperoni</option>
+            <option value="araña">Vegana</option>
+            <option value="otra">4 quesos</option>
+        </select> 
+    <br><br>
+        <button type="submit">Hacer pedido</button>
+    </form>
+
 </body>
 </html>
